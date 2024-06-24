@@ -2,6 +2,7 @@ import NavBar from "react-bootstrap/Navbar"
 import Container from "react-bootstrap/Container"
 import { LinkContainer } from "react-router-bootstrap"
 import { Link } from "react-router-dom"
+import SearchBox from "./SearchBox"
 
 const Header = () => {
     return (
@@ -18,11 +19,11 @@ const Header = () => {
                         </NavBar.Brand>
                     </LinkContainer>
                     {" "}
-                    {/* <SearchBox /> */}
+                    <SearchBox />
                     <nav className="d-flex align-items-center justify-content-end me-2 ms-4">
                         <Link to="/cart" className="nav-link">
-                        <i className="fa fa-shopping-cart text-white"></i>
-                        {/* {badge} */}
+                            <i className="fa fa-shopping-cart text-white"></i>
+                            {/* {badge} */}
                         </Link>
                     </nav>
                     <Link className="nav-link text-white" to="/signin">Sign In</Link>
